@@ -1,24 +1,36 @@
-## Plan: Minimal TODO app structure
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-TL;DR: Create a tiny Next.js App Router skeleton in `src/app` with just a root layout and a single page that manages todo state in-memory.
+## Getting Started
 
-Steps
+First, run the development server:
 
-1. Create `src/app/layout.tsx` with the basic HTML structure and `children` rendering.
-2. Create `src/app/page.tsx` as a client component with `useState` for `todos` and input text.
-3. Implement add, toggle complete, and delete logic in `page.tsx`.
-4. Keep file structure minimal; do not add localStorage or extra persistence yet.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-Relevant files
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- `src/app/layout.tsx`
-- `src/app/page.tsx`
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-Verification
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-1. `npm run dev` should compile the app.
-2. In the browser, the page should allow adding todos, showing the list, toggling complete, and deleting items.
+## Learn More
 
-Next step
+To learn more about Next.js, take a look at the following resources:
 
-- After this, add persistence (localStorage), filters, or separate components as requested.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
