@@ -3,7 +3,7 @@
 // Next.js 개발 모드에서는 파일을 수정할 때마다 서버가 재시작되는데,
 // 그때마다 새 DB 연결이 생기는 것을 막기 위해 globalThis에 저장해둡니다.
 
-import { PrismaClient } from "@/app/generated/prisma";
+import { PrismaClient } from "../app/generated/prisma";
 
 const globalForPrisma = globalThis as unknown as {
   prisma: PrismaClient | undefined;
