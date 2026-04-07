@@ -10,11 +10,15 @@ generator client {
 
 datasource db {
   provider = "sqlite"
-  url      = env("DATABASE_URL")
 }
 
-model Message {
-  id        Int      @id @default(autoincrement())
-  content   String
-  createdAt DateTime @default(now())
+model Task {
+  id        Int       @id @default(autoincrement())
+  title     String
+  section   String
+  done      Boolean   @default(false)
+  startedAt DateTime?
+  emoji     String
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
 }
